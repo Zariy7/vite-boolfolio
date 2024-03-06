@@ -20,9 +20,10 @@ export default {
         if(response.data.success){
           //console.log(response.data.response);
           this.project = response.data.response;
+          //console.log(this.project);
         }
         else{
-          this.$router.push({ name: not-found });
+          this.$router.push({ name: 'not-found' });
         }
       });
     }
@@ -32,8 +33,15 @@ export default {
 
 <template>
   <div class="container">
-    <div class="btn btn-sm btn-primary" @click="console.log(this.project)">Check!</div>
-    <h1>{{ this.project.title }}</h1>
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ project['1'].title }}</h1>
+        <div>
+          {{ project['1'].desc }}
+        </div>
+      </div>
+    </div>
+    <!-- <div class="btn btn-sm btn-primary" @click="console.log(project)">Check!</div> -->
   </div>
 </template>
 

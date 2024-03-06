@@ -24,7 +24,7 @@ const router = createRouter({
             component: ShowProject
         },
         {
-            path: '/:catchAll(.*)',
+            path: '/:pathMatch(.*)',
             name: 'not-found',
             component: AppNotFound
         }
