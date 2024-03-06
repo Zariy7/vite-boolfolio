@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import AppMain from './components/AppMain.vue';
 import AppHome from './components/AppHome.vue';
 import AppNotFound from './components/AppNotFound.vue';
+import ShowProject from './components/ShowProject.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -16,6 +17,11 @@ const router = createRouter({
             path: '/portfolio',
             name: 'portfolio',
             component: AppMain
+        },
+        {
+            path: '/project/:slug',
+            name: 'project',
+            component: ShowProject
         },
         {
             path: '/:catchAll(.*)',
