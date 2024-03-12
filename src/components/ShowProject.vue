@@ -35,9 +35,9 @@ export default {
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>{{ project['1'].title }}</h1>
+        <h1>{{ project.title }}</h1>
         <div>
-          {{ project['1'].desc }}
+          {{ project.desc }}
         </div>
       </div>
     </div>
